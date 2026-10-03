@@ -1,0 +1,7 @@
+<Window x:Class="POSS.MainWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="POS SYSTEM" Height="720" Width="1400" WindowStartupLocation="CenterScreen" WindowState="Maximized">
+<Grid><Grid.ColumnDefinitions><ColumnDefinition Width="220"/><ColumnDefinition Width="*"/></Grid.ColumnDefinitions>
+<Border Grid.Column="0" Background="#111827"><StackPanel Margin="15"><TextBlock Text="POS SYSTEM" Foreground="White" FontSize="28" FontWeight="Bold" Margin="0,20,0,30"/>
+<Button x:Name="btnPOS" Content="POS" Height="50" Margin="0,0,0,10" FontSize="16" FontWeight="SemiBold" Background="#3B82F6" Foreground="White" BorderThickness="0" Click="btnPOS_Click"/>
+<Button x:Name="btnHistory" Content="売上履歴" Height="50" FontSize="16" FontWeight="SemiBold" Background="#10B981" Foreground="White" BorderThickness="0" Click="btnHistory_Click"/>
+<Button x:Name="btnProduct" Content="商品管理" Height="50" Margin="0,10,0,0" FontSize="16" FontWeight="SemiBold" Background="#F59E0B" Foreground="White" BorderThickness="0" Click="btnProduct_Click"/>
+</StackPanel></Border><Frame x:Name="MainFrame" Grid.Column="1" NavigationUIVisibility="Hidden"/></Grid></Window>
